@@ -1,0 +1,27 @@
+﻿<Window x:Class="BadgeGeneratorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BadgeGeneratorApp"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450" Width="800"
+        Loaded="OnLoaded">
+    <StackPanel>
+        <TextBlock Text="Label:" />
+        <TextBox x:Name="labelTextBox" Text="Package.Id" TextChanged="OnTextChanged" />
+        <TextBlock Text="Label Color:" />
+        <TextBox x:Name="labelColorTextBox" Text="#555555" TextChanged="OnTextChanged" />
+
+        <TextBlock Text="Message:" />
+        <TextBox x:Name="messageTextBox" Text="v1.2.3" TextChanged="OnTextChanged" />
+        <TextBlock Text="Message Color:" />
+        <TextBox x:Name="messageColorTextBox" Text="#4EC820" TextChanged="OnTextChanged" />
+
+        <TextBlock Text="Scale:" />
+        <TextBox x:Name="scaleTextBox" Text="3" TextChanged="OnTextChanged" />
+
+        <Image x:Name="previewImage" Stretch="None" />
+    </StackPanel>
+</Window>
